@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fce4ec);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Logout link */
+h3 {
+  text-align: right;
+  color: #e91e63;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+h3:hover {
+  color: #c2185b;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.2);
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #f8bbd0;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #e91e63;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#micBtn {
+  background-color: #f48fb1;
+  color: white;
+}
+#micBtn:hover {
+  background-color: #ec407a;
+}
+
+#submitBtn {
+  background-color: #e91e63;
+  color: white;
+}
+#submitBtn:hover {
+  background-color: #c2185b;
+}
+
+/* Contact Card */
+h2 {
+  text-align: center;
+  color: #e91e63;
+  margin-top: 30px;
+}
+
+#contactCard {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.2);
+  line-height: 1.6;
+}
+
+#contactCard p {
+  font-size: 1rem;
+  color: #555;
+}
+
+#contactCard strong {
+  color: #c2185b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form, #contactCard {
+    padding: 15px;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

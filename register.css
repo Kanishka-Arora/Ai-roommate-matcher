@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fce4ec); /* Match the gradient from login.css */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column; /* Stack the elements vertically */
+  color: #333;
+  text-align: center;
+}
+
+/* Style the heading */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #e91e63; /* Match the color of the heading from login.css */
+  font-size: 2rem;
+}
+
+/* Style the form container */
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(233, 30, 99, 0.2); /* Match the shadow from login.css */
+  width: 100%;
+  max-width: 400px; /* Adjust the form's width for a more centered look */
+  margin-top: 20px;
+}
+
+/* Style all labels */
+label {
+  font-weight: bold;
+  color: #c2185b; /* Match the label color from login.css */
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* Style text and password inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: calc(100% - 20px); /* Adjust width to fit with padding */
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #f8bbd0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  border-color: #e91e63;
+  outline: none;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #e91e63; /* Match the button color from login.css */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #c2185b; /* Match the hover color from login.css */
+}
+
+/* Style the sign-up link */
+p {
+  margin-top: 15px;
+  text-align: center;
+}
+
+a {
+  color: #e91e63; /* Match the link color from login.css */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

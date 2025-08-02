@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffe4ec, #fce4ec);
+  color: #3b3b3b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Main Container */
+.main-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(255, 182, 193, 0.3);
+  max-width: 720px;
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.2rem;
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+header i {
+  color: #e91e63;
+  margin-right: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hero Image */
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 20px rgba(233, 30, 99, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+/* Call-to-action */
+.cta {
+  margin-top: 20px;
+}
+
+.login-btn {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  padding: 14px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.3);
+}
+
+.login-btn i {
+  margin-right: 8px;
+}
+
+.login-btn:hover {
+  background-color: #c2185b;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 25px 20px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}
